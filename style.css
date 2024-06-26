@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-:root {}
+:root {
+    --font_primaria: "Inter", sans-serif;
+    --font_weight_normal: 400;
+    --font_weight_bold: 700;
+}
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 @media (min-width:375px) and (max-width:768px) {
@@ -18,7 +23,7 @@
         align-items: center;
     }
 
-    nav a img{
+    nav a img {
         width: 11rem;
         height: auto;
     }
@@ -27,7 +32,7 @@
         border: 3px rgb(9, 189, 21) solid;
         /*excluir*/
         width: 100vw;
-        height: 90vh;
+        height: 75vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -38,13 +43,17 @@
         /*excluir*/
         width: 84vw;
         height: 51.05vh;
-        border-radius: 0.2rem;
+        border-radius: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .formulario .title {
         border: red 1px solid;
         /*excluir*/
-        width: auto;
+        width: 84vw;
         height: 15vh;
         display: flex;
         flex-direction: column;
@@ -73,19 +82,44 @@
     .formulario .conta {
         border: rgb(199, 15, 220) 1px solid;
         /*excluir*/
-        width: auto;
+        width: 84vw;
         height: 35vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+    }
 
+    .formulario .conta h4 {
+        font-family: var(--font_primaria);
+        font-weight: var(--font_weight_bold);
+        margin-bottom: 1rem;
+    }
+
+    .formulario .conta input {
+        width: 68vw;
+        height: 7.45vh;
+        border-radius: 0.5rem;
+        outline: none;
+        border: none;
+        background-color: #47474714;
+        padding-left: 0.5rem;
+        font-size: 1rem;
+        color: #666666;
+        margin-bottom: 2rem;
     }
 
     .formulario .outrologin {
-        border: red 1px solid;
+        border: #9900ff 1px solid;
         /*excluir*/
-        width: auto;
+        width: 84vw;
         height: 15vh;
+        font-family: var(--font_primaria);
+        font-weight: var(--font_weight_bold);
+    }
+    
+    .formulario .outrologin img {
+       
+
     }
 }
