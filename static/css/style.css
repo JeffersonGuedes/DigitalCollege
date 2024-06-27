@@ -4,6 +4,10 @@
     --font_primaria: "Inter", sans-serif;
     --font_weight_normal: 400;
     --font_weight_bold: 700;
+    --cor_primario: #C92071;
+    --cor_segundaria: #FFFFFF;
+    --cor_terciaria: #000000;
+    --cor_input: #666666;
 }
 
 * {
@@ -14,7 +18,7 @@
 
 @media (min-width:375px) and (max-width:768px) {
     nav {
-        background-color: red;
+        background-color: var(--cor_segundaria);
         /*excluir  widht: 315px  height: 411px*/
         width: 100vw;
         height: 10vh;
@@ -29,20 +33,19 @@
     }
 
     main {
-        border: 3px rgb(9, 189, 21) solid;
-        /*excluir*/
+
+        background: linear-gradient(180deg, rgba(187, 188, 244, 1) 0%, rgba(206, 207, 248, 1) 100%);
         width: 100vw;
-        height: 75vh;
+        height: 80vh;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
     .formulario {
-        border: rgb(43, 255, 0) 1px solid;
-        /*excluir*/
+        background-color: var(--cor_segundaria);
         width: 84vw;
-        height: 51.05vh;
+        height: 60vh;
         border-radius: 0.5rem;
         display: flex;
         flex-direction: column;
@@ -51,10 +54,8 @@
     }
 
     .formulario .title {
-        border: red 1px solid;
-        /*excluir*/
-        width: 84vw;
-        height: 15vh;
+        width: auto;
+        height: 20vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -76,50 +77,84 @@
     }
 
     .formulario .title p a {
-        color: #000;
+        color: var(--cor_terciaria);
     }
 
     .formulario .conta {
-        border: rgb(199, 15, 220) 1px solid;
-        /*excluir*/
-        width: 84vw;
-        height: 35vh;
+        width: auto;
+        height: 30vh;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
+        justify-content: flex-start;
+        align-items: center;
     }
 
     .formulario .conta h4 {
         font-family: var(--font_primaria);
         font-weight: var(--font_weight_bold);
         margin-bottom: 1rem;
+        align-self: flex-start;
     }
 
     .formulario .conta input {
         width: 68vw;
-        height: 7.45vh;
+        height: 8.5vh;
         border-radius: 0.5rem;
         outline: none;
         border: none;
         background-color: #47474714;
         padding-left: 0.5rem;
         font-size: 1rem;
-        color: #666666;
+        color: var(--cor_input);
         margin-bottom: 2rem;
     }
 
+    .formulario .conta button {
+        width: 68vw;
+        height: 7vh;
+        font-family: var(--font_primaria);
+        font-weight: var(--font_weight_bold);
+        font-size: 1.1rem;
+        border-radius: 0.5rem;
+        outline: none;
+        border: none;
+        background-color: var(--cor_primario);
+        color: var(--cor_segundaria);
+        cursor: pointer;
+        transition: 0.5s ease;
+        
+
+    }
+
+    .formulario .conta button:hover {
+        background-color: #f04799;
+        color: var(--cor_terciaria);
+    }
+
     .formulario .outrologin {
-        border: #9900ff 1px solid;
-        /*excluir*/
-        width: 84vw;
+        width: auto;
         height: 15vh;
         font-family: var(--font_primaria);
         font-weight: var(--font_weight_bold);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1.3rem;
     }
-    
-    .formulario .outrologin img {
-       
 
+    .formulario .outrologin .img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
     }
+
+    .formulario .outrologin .img img {
+        width: 2rem;
+    }
+
+
+
 }
