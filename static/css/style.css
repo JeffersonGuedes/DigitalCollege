@@ -570,6 +570,7 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
+        padding: 0 5rem;
     }
 
     nav a img {
@@ -582,6 +583,15 @@
         width: 100vw;
         height: 80vh;
         padding: 5rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    main .fotoSapatos img{
+        width: 40rem;
+        margin-left: 6rem;
     }
 
     .formulario {
@@ -591,6 +601,7 @@
         border-radius: 0.5rem;
         display: flex;
         flex-direction: column;
+        align-self: flex-start;
         padding: 0 1.5rem;
     }
 
@@ -700,19 +711,25 @@
     .rodape {
         background-color: var(--cor_terciaria);
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: flex-start;
-        padding: 3rem 2rem;
+        padding: 3rem 5rem 0 5rem;
+    }
+
+    .sobreIcones {
+        width: 30vw;
+        margin-right: 0.5rem;
     }
 
     .rodape .sobre img {
-        width: 10rem;
-        display: flex;
-        margin-bottom: 1rem;
+        width: 12rem;
+        margin-bottom: 2.5rem;
     }
 
     .rodape .sobre p {
+        width: 70%;
+        line-height: 1.3rem;
         color: var(--cor_segundaria);
         font-family: var(--font_primaria);
         font-size: 0.9rem;
@@ -723,17 +740,17 @@
         width: 1.5rem;
         height: 1.5rem;
         margin-right: 1.5rem;
-        margin-bottom: 2rem;
+        margin-bottom: 5rem;
     }
 
     .rodape .informacao {
-        width: 100%;
+        width: 30vw;
         color: var(--cor_segundaria);
         font-family: var(--font_primaria);
         font-weight: var(--font_weight_normal);
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
+        justify-content: space-around;
         gap: 5rem;
         margin-bottom: 2rem;
     }
@@ -741,13 +758,13 @@
     .rodape .informacao .informacao1 h4 {
         font-family: var(--font_primaria);
         font-weight: var(--font_weight_normal);
-        font-size: 1.2rem;
-        margin-bottom: 0.8rem;
+        font-size: 1.5rem;
+        margin-bottom: 1.2rem;
     }
 
     .rodape .informacao .informacao1 li {
         list-style: none;
-        margin-bottom: 0.5rem;
+        margin-bottom: 1rem;
     }
 
     .rodape .informacao .informacao1 li a {
@@ -758,13 +775,13 @@
     .rodape .informacao .informacao2 h4 {
         font-family: var(--font_primaria);
         font-weight: var(--font_weight_normal);
-        font-size: 1.2rem;
-        margin-bottom: 0.8rem;
+        font-size: 1.5rem;
+        margin-bottom: 1.2rem;
     }
 
     .rodape .informacao .informacao2 li {
         list-style: none;
-        margin-bottom: 0.5rem;
+        margin-bottom: 1rem;
     }
 
     .rodape .informacao .informacao2 li a {
@@ -777,18 +794,18 @@
     }
 
     .contatos {
+        width: 16vw;
         color: var(--cor_segundaria);
         font-family: var(--font_primaria);
         font-weight: var(--font_weight_normal);
-        font-size: 1rem;
-
+        font-size: 1.5rem;
     }
 
     .contatos h3 {
         color: var(--cor_segundaria);
         font-family: var(--font_primaria);
         font-weight: 400;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         margin-bottom: 1rem;
     }
 
@@ -798,6 +815,7 @@
         font-weight: 400;
         font-size: 1rem;
         margin-bottom: 2rem;
+        word-break: break-all;
     }
 
     .contatos h4 {
@@ -814,6 +832,7 @@
         background-color: var(--cor_segundaria);
         border: none;
         border-radius: 0.2rem;
+        margin: 0 5rem;
     }
 
     footer {
