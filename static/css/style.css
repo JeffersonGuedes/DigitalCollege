@@ -130,6 +130,13 @@ main .fotoSapatos img {
     color: var(--cor_terciaria);
 }
 
+.formulario .conta a {
+    color: var(--cor_terciaria);
+    font-family: var(--font_primaria);
+    font-size: var(--font_weight_normal);
+    margin-bottom: 2rem;
+}
+
 .formulario .outrologin {
     width: auto;
     height: 15vh;
