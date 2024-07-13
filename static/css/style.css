@@ -66,14 +66,14 @@ main .fotoSapatos img {
 }
 
 .formulario .title h1 {
-    font-family: "Inter", sans-serif;
-    font-weight: 700;
+    font-family: var(--font_primaria);
+    font-weight: var(--font_weight_bold);
     font-size: 1.375rem;
 }
 
 .formulario .title p {
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
+    font-family: var(--font_primaria);
+    font-weight: var(--font_weight_normal);
     font-size: 0.875rem;
 }
 
@@ -293,30 +293,6 @@ footer {
 /* smartphone */
 /* tablet */
 @media (min-width:768px) and (max-width:1023px) {
-    nav {
-        background-color: var(--cor_segundaria);
-        width: 100vw;
-        height: 10vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    nav a img {
-        width: 15rem;
-        height: auto;
-    }
-
-    main {
-
-        background: linear-gradient(180deg, rgba(187, 188, 244, 1) 0%, rgba(206, 207, 248, 1) 100%);
-        width: 100vw;
-        height: 80vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
     .formulario {
         background-color: var(--cor_segundaria);
         width: 84vw;
@@ -351,9 +327,6 @@ footer {
         font-size: 1.4rem;
     }
 
-    .formulario .title p a {
-        color: var(--cor_terciaria);
-    }
 
     .formulario .conta {
         width: auto;
@@ -365,89 +338,28 @@ footer {
     }
 
     .formulario .conta h4 {
-        font-family: var(--font_primaria);
-        font-weight: var(--font_weight_bold);
-        margin-bottom: 2rem;
-        align-self: flex-start;
-    }
-
-    .formulario .conta input {
-        width: 68vw;
-        height: 8.5vh;
-        border-radius: 0.5rem;
-        outline: none;
-        border: none;
-        background-color: #47474714;
-        padding-left: 1rem;
-        font-size: 1.5rem;
-        color: var(--cor_input);
         margin-bottom: 2rem;
     }
 
     .formulario .conta button {
-        width: 68vw;
-        height: 7vh;
-        font-family: var(--font_primaria);
-        font-weight: var(--font_weight_bold);
         font-size: 1.4rem;
         border-radius: 0.4rem;
-        outline: none;
-        border: none;
-        background-color: var(--cor_primario);
-        color: var(--cor_segundaria);
-        cursor: pointer;
-        transition: 0.5s ease;
-    }
-
-    .formulario .conta button:hover {
-        background-color: #f04799;
-        color: var(--cor_terciaria);
     }
 
     .formulario .outrologin {
-        width: auto;
-        height: 15vh;
-        font-family: var(--font_primaria);
-        font-weight: var(--font_weight_bold);
         font-size: 1.6rem;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         justify-content: space-around;
-        gap: 1.3rem;
-        margin-top: 0.5rem;
-    }
-
-    .formulario .outrologin .img {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 1.5rem;
     }
 
     .formulario .outrologin .img img {
         width: 3.5rem;
     }
 
-    .rodape {
-        background-color: var(--cor_terciaria);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        padding: 3rem 2rem;
-    }
-
     .rodape .sobre img {
         width: 15rem;
-        display: flex;
-        margin-bottom: 1rem;
     }
 
     .rodape .sobre p {
-        color: var(--cor_segundaria);
-        font-family: var(--font_primaria);
         font-size: 1.6rem;
         margin-bottom: 2rem;
     }
@@ -460,107 +372,52 @@ footer {
     }
 
     .rodape .informacao {
-        width: 100%;
-        color: var(--cor_segundaria);
-        font-family: var(--font_primaria);
-        font-weight: var(--font_weight_normal);
-        display: flex;
-        flex-direction: row;
         justify-content: space-between;
-        margin-bottom: 2rem;
     }
 
     .rodape .informacao .informacao1 h4 {
-        font-family: var(--font_primaria);
-        font-weight: var(--font_weight_normal);
         font-size: 2rem;
         margin-bottom: 1rem;
     }
 
     .rodape .informacao .informacao1 li {
-        list-style: none;
         margin-bottom: 1rem;
     }
 
     .rodape .informacao .informacao1 li a {
-        color: var(--cor_segundaria);
-        text-decoration: none;
         font-size: 1.6rem;
     }
 
     .rodape .informacao .informacao2 h4 {
-        font-family: var(--font_primaria);
-        font-weight: var(--font_weight_normal);
         font-size: 2rem;
         margin-bottom: 1rem;
     }
 
     .rodape .informacao .informacao2 li {
-        list-style: none;
         margin-bottom: 1rem;
     }
 
     .rodape .informacao .informacao2 li a {
-        color: var(--cor_segundaria);
-        text-decoration: none;
         font-size: 1.6rem;
     }
 
-    #contato {
-        background-color: var(--cor_terciaria);
-    }
-
-    .contatos {
-        color: var(--cor_segundaria);
-        font-family: var(--font_primaria);
-        font-weight: var(--font_weight_normal);
-        font-size: 1rem;
-
-    }
-
     .contatos h3 {
-        color: var(--cor_segundaria);
-        font-family: var(--font_primaria);
-        font-weight: 400;
         font-size: 2rem;
         margin-bottom: 1rem;
     }
 
     .contatos p {
-        color: var(--cor_segundaria);
-        font-family: var(--font_primaria);
-        font-weight: 400;
         font-size: 1.6rem;
-        margin-bottom: 2rem;
     }
 
     .contatos h4 {
-        color: var(--cor_segundaria);
-        font-family: var(--font_primaria);
-        font-weight: 400;
         font-size: 1.6rem;
-    }
-
-    .barra {
-        height: 0.1rem;
-        margin-left: 2rem;
-        margin-right: 2rem;
-        background-color: var(--cor_segundaria);
-        border: none;
-        border-radius: 0.2rem;
     }
 
     footer {
         height: 15vh;
-        font-family: var(--font_primaria);
         font-size: 1.5rem;
-        background-color: var(--cor_terciaria);
-        color: var(--cor_segundaria);
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
         padding-top: 3rem;
-
     }
 }
 
