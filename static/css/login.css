@@ -1,0 +1,141 @@
+/* celular */
+.formulario {
+    height: 71.055vh;
+    border-radius: 0.3rem;
+    justify-content: space-between;
+}
+
+.formulario .title {
+    height: 8vh;
+    margin-top: 1.5rem;
+}
+
+.formulario .title h1 {
+    font-size: 1.6rem;
+}
+
+.formulario .title p {
+    font-size: 0.92rem;
+}
+
+.formulario .conta {
+    height: 45vh;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.formulario .conta h4 {
+    margin-bottom: 0.5rem;
+}
+
+.formulario .conta input {
+    height: 7.45vh;
+    margin-bottom: 1.3rem;
+    font-size: 1.2rem;
+}
+
+.formulario .conta a {
+    margin-bottom: 1.3rem;
+}
+/* /celular */
+/* tablet */
+@media (min-width:768px) and (max-width:1023px) {
+
+    .formulario .title h1 {
+        font-size: 2.5rem;
+    }
+
+    .formulario .title p {
+        font-size: 1.5rem;
+    }
+
+    .formulario .conta {
+        height: 60vh;
+    }
+
+    .formulario .conta h4 {
+        font-size: 1.4rem;
+    }
+
+    .formulario .conta input {
+        height: 7.45vh;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+    }
+
+    .formulario .conta a {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+
+    .formulario .conta button {
+        font-size: 2rem;
+    }
+
+}
+/* /tablet */
+@media (min-width:1024px) {
+
+    main {
+        height: 90vh;
+    }
+
+    main .fotoSapatos img {
+        height: 45vw;
+    }
+
+    .formulario {
+        width: 40vw;
+        height: 65vh;
+        padding: 0rem 1.5rem;
+    }
+
+    .formulario .title {
+        padding: 0rem;
+        justify-content: center;
+    }
+
+    .formulario .title h1 {
+        font-size: 1.8rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .formulario .title p {
+        font-size: 1rem;
+        margin: 0;
+        padding: 0rem;
+    }
+
+    .formulario .conta {
+        height: 60vh;
+        margin-bottom: 0.5rem;
+    }
+
+    .formulario .conta h4 {
+        margin-bottom: 0.3rem;
+    }
+
+    .formulario .conta input {
+        height: 7vh;
+    }
+
+    .formulario .conta button {
+        height: 7vh;
+    }
+
+}
+
+/* /notebook */
+/* desktop */
+@media (min-width:1440px) {
+    main .fotoSapatos img {
+        width: 40vw;
+        height: auto;
+        margin-left: 4rem;
+        align-self: flex-end;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+}
