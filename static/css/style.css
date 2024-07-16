@@ -8,6 +8,9 @@
     --cor_segundaria: #FFFFFF;
     --cor_terciaria: #000000;
     --cor_input: #666666;
+    --cor_fundo: #F5F5F5;
+    --cor_fundo_input_search: #F8F8F8;
+    --color_input: #A0A0A0;
 }
 
 * {
